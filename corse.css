@@ -30,10 +30,12 @@
 	.navbar-link:hover{
 		transform: translateY(-3px) scale(1.05) ;
 	}
-	.color{
+	.color a{
 		font-family: Lobster ;
-		color: #EC471B ; 
+		color: #000000 ;
+		text-decoration: none;
 	}
+
 	a{
 		font-family: Lobster ;
 		color: #A07E35 ;
@@ -50,7 +52,8 @@
 		width: 95%;
 	}
 	h2{
-		text-align: right; 
+		text-align: right;
+		font-size: medium ; 
 	}
 /*FOOTER*/
 .pie-pagina{
@@ -153,8 +156,9 @@
 		height: 60% ;
 	}
 	.imagen-tabla{
-		margin-left: 30%;
-		margin-bottom: 10%;
+		display: flex ;
+		justify-content: center ; 
+		
 	}
 	p{
 		text-align: center;
@@ -171,3 +175,11 @@
 		width: 35% ;
 		height: 60% ;
 	}
+	
+	@media screen and (max-width: 800px) {
+		.imagen-tabla{
+			display: flex;
+			justify-content: center ;
+			
+	}	
+}
